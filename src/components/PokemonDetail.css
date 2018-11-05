@@ -1,0 +1,50 @@
+.pokemon-detail-search {
+    width: 100%;
+    padding: 2rem;
+    background-color: #26b9ca;
+    color: #FFF;
+}
+
+.pokemon-detail-search input {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: none;
+    border: none;
+    width: 80%;
+    max-width: 300px;
+}
+
+.pokemon-detail-name {
+    padding: 2rem;
+}
+
+.pokemon-detail-name bdi {
+    color: #26b9ca;
+}
+
+.pokemon-detail-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-detail-main img {
+    flex: 1 1 100px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.pokemon-detail-size {
+    text-align: left;
+    background-color: #F6F6F6;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.pokemon-detail-type {
+    background-color: #FFF;
+    padding: 0.5rem 1rem;
+    margin: 2px;
+    border-radius: 0.5rem;
+}

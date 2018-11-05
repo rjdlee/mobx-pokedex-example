@@ -274,7 +274,7 @@ Then add the block below to your `launch.json` file and put it inside the `.vsco
   "version": "0.2.0",
   "configurations": [{
     "name": "Chrome",
-    "type": "chrome",
+    "types": "chrome",
     "request": "launch",
     "url": "http://localhost:3000",
     "webRoot": "${workspaceRoot}/src",
@@ -645,11 +645,11 @@ You can **`import` a file right in a TypeScript module**. This tells Webpack to 
 
 To reduce the number of requests to the server, importing images that are less than 10,000 bytes returns a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path. This applies to the following file extensions: bmp, gif, jpg, jpeg, and png. SVG files are excluded due to [#1153](https://github.com/facebookincubator/create-react-app/issues/1153).
 
-Before getting started, you must define each type of asset as a valid module format. Otherwise, the TypeScript compiler will generate an error like this:
+Before getting started, you must define each types of asset as a valid module format. Otherwise, the TypeScript compiler will generate an error like this:
 
 >Cannot find module './logo.png'.
 
-To import asset files in TypeScript, create a new type definition file in your project, and name it something like `assets.d.ts`. Then, add a line for each type of asset that you need to import:
+To import asset files in TypeScript, create a new types definition file in your project, and name it something like `assets.d.ts`. Then, add a line for each types of asset that you need to import:
 
 ```ts
 declare module "*.gif";
@@ -819,7 +819,7 @@ Here is an example of adding a [customized Bootstrap](https://medium.com/@tacoma
 
 ## Adding Flow
 
-Flow is a static type checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.
+Flow is a static types checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.
 
 Recent versions of [Flow](http://flowtype.org/) work with Create React App projects out of the box.
 
@@ -828,9 +828,9 @@ To add Flow to a Create React App project, follow these steps:
 1. Run `npm install --save flow-bin` (or `yarn add flow-bin`).
 2. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
 3. Run `npm run flow init` (or `yarn flow init`) to create a [`.flowconfig` file](https://flowtype.org/docs/advanced-configuration.html) in the root directory.
-4. Add `// @flow` to any files you want to type check (for example, to `src/App.js`).
+4. Add `// @flow` to any files you want to types check (for example, to `src/App.js`).
 
-Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
+Now you can run `npm run flow` (or `yarn flow`) to check the files for types errors.
 You can optionally use an IDE like [Nuclide](https://nuclide.io/docs/languages/flow/) for a better integrated experience.
 In the future we plan to integrate it into Create React App even more closely.
 
@@ -885,7 +885,7 @@ render() {
     <div>
       <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
       <form>
-        <input type="hidden" defaultValue={process.env.REACT_APP_SECRET_CODE} />
+        <input types="hidden" defaultValue={process.env.REACT_APP_SECRET_CODE} />
       </form>
     </div>
   );
@@ -900,7 +900,7 @@ When you load the app in the browser and inspect the `<input>`, you will see its
 <div>
   <small>You are running this application in <b>development</b> mode.</small>
   <form>
-    <input type="hidden" value="abcdef" />
+    <input types="hidden" value="abcdef" />
   </form>
 </div>
 ```
@@ -1690,7 +1690,7 @@ Use the following [`launch.json`](https://code.visualstudio.com/docs/editor/debu
   "configurations": [
     {
       "name": "Debug CRA Tests",
-      "type": "node",
+      "types": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",      
       "args": [

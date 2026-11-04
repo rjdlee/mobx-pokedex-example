@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.18.1",
     "mobx": "^5.5.2",
     "mobx-react": "^5.3.6",
     "mobx-utils": "^5.0.4",
